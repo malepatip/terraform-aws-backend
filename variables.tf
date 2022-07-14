@@ -18,10 +18,6 @@ variable "env" {
     "dev" = "dev"
   }
 }
-variable "region" {
-  description = "Your AWS Region"
-  type        = string
-}
 variable "principal_arns" {
   description = "List of principle arns allowed to assume the IAM role"
   default     = null

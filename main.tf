@@ -1,5 +1,4 @@
 locals {
-  env_namespace         = join("_", [var.org_name, var.team_name, var.project_id, var.env["dev"]])
   general_namespace     = join("_", [var.org_name, var.team_name, var.project_id])
   #s3 bucket naming based on best practices: https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html
   s3_bucket_namespace   = join("-", [var.org_name, var.team_name, var.project_id, var.env["dev"]])
